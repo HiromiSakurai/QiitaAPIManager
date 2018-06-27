@@ -10,6 +10,7 @@ import Moya
 
 enum QiitaAPI {
     case search(String, Int)
+    case item(String)
 }
 
 extension QiitaAPI: TargetType {
@@ -23,12 +24,14 @@ extension QiitaAPI: TargetType {
         switch self {
         case .search:
             return "/items"
+        case .item(let itemId):
+            return "/items/" + itemId
         }
     }
 
     var method: Moya.Method {
         switch self {
-        case .search:
+        case .search, .item:
             return .get
         }
     }
@@ -41,6 +44,8 @@ extension QiitaAPI: TargetType {
         switch self {
         case .search(let query, let page):
             return .requestParameters(parameters: ["page": page, "per_page": 20, "query": query], encoding: URLEncoding.default)
+        case .item(let itemId):
+            return .requestParameters(parameters: ["item_id": itemId], encoding: URLEncoding.default)
         }
     }
 
