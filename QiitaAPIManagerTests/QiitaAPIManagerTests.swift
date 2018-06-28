@@ -8,9 +8,13 @@
 
 import XCTest
 @testable import QiitaAPIManager
+import RxSwift
+import Moya
+import RxMoya
 
 class QiitaAPIManagerTests: XCTestCase {
-    
+
+    let disposeBag = DisposeBag()
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -20,17 +24,19 @@ class QiitaAPIManagerTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+
+    func testFetchData() {
+        let aaa = Api()
+        let exp = expectation(description: "get API response")
+        aaa.apitest()
+            .subscribe(onSuccess: { res in
+                print(res)
+                exp.fulfill()
+            }, onError: { error in
+                exp.fulfill()
+                XCTAssert(false, error.localizedDescription)
+            })
+            .disposed(by: disposeBag)
+        waitForExpectations(timeout: 5.0, handler: nil)
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }

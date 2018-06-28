@@ -15,4 +15,13 @@ public struct Group: Decodable {
     public let `private`: Bool?
     public let updatedAt: String?
     public let urlName: String?
+
+    enum CodingKeys: String, CodingKey {
+        case createdAt = "created_at"
+        case id
+        case name
+        case `private`
+        case updatedAt = "updated_at"
+        case urlName = "url_name"
+    }
 }
