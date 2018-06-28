@@ -7,17 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D607B5720E12C3600DDCD8C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D607B5620E12C3600DDCD8C /* Alamofire.framework */; };
-		5D607B5920E12C5600DDCD8C /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D607B5820E12C5600DDCD8C /* Moya.framework */; };
-		5D607B5B20E12C8900DDCD8C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D607B5A20E12C8900DDCD8C /* Result.framework */; };
-		5D607B5D20E12CBA00DDCD8C /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D607B5C20E12CBA00DDCD8C /* RxMoya.framework */; };
-		5D607B6120E12CDA00DDCD8C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D607B6020E12CDA00DDCD8C /* RxSwift.framework */; };
 		5D607B6720E1308E00DDCD8C /* QiitaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D607B6620E1308E00DDCD8C /* QiitaAPI.swift */; };
 		5DC8FCCE20E3C3BB00458DC1 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC8FCCD20E3C3BB00458DC1 /* Article.swift */; };
 		5DC8FCD020E3C87100458DC1 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC8FCCF20E3C87100458DC1 /* Group.swift */; };
 		5DC8FCD220E3C88B00458DC1 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC8FCD120E3C88B00458DC1 /* Tag.swift */; };
 		5DC8FCD420E3C8B300458DC1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC8FCD320E3C8B300458DC1 /* User.swift */; };
-		5DE1A83B20E10E0B003C5E87 /* QiitaAPIManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DE1A83120E10E0A003C5E87 /* QiitaAPIManager.framework */; };
+		5DC8FCE320E4047C00458DC1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D607B5620E12C3600DDCD8C /* Alamofire.framework */; };
+		5DC8FCE420E4048700458DC1 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D607B5820E12C5600DDCD8C /* Moya.framework */; };
+		5DC8FCE520E404AB00458DC1 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D607B5C20E12CBA00DDCD8C /* RxMoya.framework */; };
+		5DC8FCE620E404B900458DC1 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D607B6020E12CDA00DDCD8C /* RxSwift.framework */; };
+		5DC8FCED20E40E4F00458DC1 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D607B6020E12CDA00DDCD8C /* RxSwift.framework */; };
+		5DC8FCEF20E40F3600458DC1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D607B5620E12C3600DDCD8C /* Alamofire.framework */; };
+		5DC8FCF020E40F4200458DC1 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D607B5820E12C5600DDCD8C /* Moya.framework */; };
+		5DC8FCF120E40F4D00458DC1 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D607B5C20E12CBA00DDCD8C /* RxMoya.framework */; };
+		5DC8FCF720E4100300458DC1 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5D607B6020E12CDA00DDCD8C /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DC8FCF820E4100800458DC1 /* RxMoya.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5D607B5C20E12CBA00DDCD8C /* RxMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DC8FCF920E4100E00458DC1 /* Moya.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5D607B5820E12C5600DDCD8C /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DC8FCFA20E4101400458DC1 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5D607B5620E12C3600DDCD8C /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DC8FCFB20E4107B00458DC1 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D607B5A20E12C8900DDCD8C /* Result.framework */; };
+		5DC8FCFC20E4108B00458DC1 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D607B5A20E12C8900DDCD8C /* Result.framework */; };
+		5DC8FCFD20E4109900458DC1 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5D607B5A20E12C8900DDCD8C /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5DE1A84020E10E0B003C5E87 /* QiitaAPIManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE1A83F20E10E0B003C5E87 /* QiitaAPIManagerTests.swift */; };
 		5DE1A84220E10E0B003C5E87 /* QiitaAPIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE1A83420E10E0A003C5E87 /* QiitaAPIManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -32,6 +41,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5DC8FCF620E40FF100458DC1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5DC8FCFD20E4109900458DC1 /* Result.framework in CopyFiles */,
+				5DC8FCFA20E4101400458DC1 /* Alamofire.framework in CopyFiles */,
+				5DC8FCF920E4100E00458DC1 /* Moya.framework in CopyFiles */,
+				5DC8FCF820E4100800458DC1 /* RxMoya.framework in CopyFiles */,
+				5DC8FCF720E4100300458DC1 /* RxSwift.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5D607B5620E12C3600DDCD8C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		5D607B5820E12C5600DDCD8C /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
@@ -45,6 +71,7 @@
 		5DC8FCCF20E3C87100458DC1 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		5DC8FCD120E3C88B00458DC1 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		5DC8FCD320E3C8B300458DC1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5DC8FCEA20E4050500458DC1 /* RxSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxSwift.framework.dSYM; path = Carthage/Build/iOS/RxSwift.framework.dSYM; sourceTree = "<group>"; };
 		5DE1A83120E10E0A003C5E87 /* QiitaAPIManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QiitaAPIManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DE1A83420E10E0A003C5E87 /* QiitaAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QiitaAPIManager.h; sourceTree = "<group>"; };
 		5DE1A83520E10E0A003C5E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,11 +85,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D607B6120E12CDA00DDCD8C /* RxSwift.framework in Frameworks */,
-				5D607B5D20E12CBA00DDCD8C /* RxMoya.framework in Frameworks */,
-				5D607B5B20E12C8900DDCD8C /* Result.framework in Frameworks */,
-				5D607B5920E12C5600DDCD8C /* Moya.framework in Frameworks */,
-				5D607B5720E12C3600DDCD8C /* Alamofire.framework in Frameworks */,
+				5DC8FCFB20E4107B00458DC1 /* Result.framework in Frameworks */,
+				5DC8FCE620E404B900458DC1 /* RxSwift.framework in Frameworks */,
+				5DC8FCE520E404AB00458DC1 /* RxMoya.framework in Frameworks */,
+				5DC8FCE420E4048700458DC1 /* Moya.framework in Frameworks */,
+				5DC8FCE320E4047C00458DC1 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +97,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DE1A83B20E10E0B003C5E87 /* QiitaAPIManager.framework in Frameworks */,
+				5DC8FCFC20E4108B00458DC1 /* Result.framework in Frameworks */,
+				5DC8FCF120E40F4D00458DC1 /* RxMoya.framework in Frameworks */,
+				5DC8FCF020E40F4200458DC1 /* Moya.framework in Frameworks */,
+				5DC8FCEF20E40F3600458DC1 /* Alamofire.framework in Frameworks */,
+				5DC8FCED20E40E4F00458DC1 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +111,7 @@
 		5D607B5520E12C3500DDCD8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5DC8FCEA20E4050500458DC1 /* RxSwift.framework.dSYM */,
 				5D607B6220E12CE900DDCD8C /* RxTest.framework */,
 				5D607B6020E12CDA00DDCD8C /* RxSwift.framework */,
 				5D607B5E20E12CC400DDCD8C /* Build */,
@@ -181,6 +213,7 @@
 				5DE1A83620E10E0B003C5E87 /* Sources */,
 				5DE1A83720E10E0B003C5E87 /* Frameworks */,
 				5DE1A83820E10E0B003C5E87 /* Resources */,
+				5DC8FCF620E40FF100458DC1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -416,6 +449,7 @@
 		5DE1A84620E10E0B003C5E87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -423,6 +457,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -445,6 +480,7 @@
 		5DE1A84720E10E0B003C5E87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -452,6 +488,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -474,8 +511,13 @@
 		5DE1A84920E10E0B003C5E87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NNJ4R56398;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = QiitaAPIManagerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -492,8 +534,13 @@
 		5DE1A84A20E10E0B003C5E87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NNJ4R56398;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = QiitaAPIManagerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
