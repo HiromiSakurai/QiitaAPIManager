@@ -7,6 +7,8 @@
 //
 
 import Moya
+import RxMoya
+import RxSwift
 
 enum QiitaAPI {
     case search(String, Int)
@@ -35,7 +37,7 @@ extension QiitaAPI: TargetType {
             return .get
         }
     }
-
+    
     var sampleData: Data {
         return Data()
     }
@@ -44,12 +46,23 @@ extension QiitaAPI: TargetType {
         switch self {
         case .search(let query, let page):
             return .requestParameters(parameters: ["page": page, "per_page": 20, "query": query], encoding: URLEncoding.default)
-        case .item(let itemId):
-            return .requestParameters(parameters: ["item_id": itemId], encoding: URLEncoding.default)
+        case .item:
+            return .requestPlain
         }
     }
 
     var headers: [String: String]? {
-        return nil
+        return ["Content-Type": "application/json"]
+    }
+}
+
+
+// TODO: Fix class name & place
+public class Api {
+    let provider = MoyaProvider<QiitaAPI>()
+    public func apitest() -> Single<Article> {
+        return provider.rx.request(.item("3437fe7143b2ab31d2a5"))
+            .filterSuccessfulStatusCodes()
+            .map(Article.self)
     }
 }
