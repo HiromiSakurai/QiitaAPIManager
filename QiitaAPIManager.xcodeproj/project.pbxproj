@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D607B6720E1308E00DDCD8C /* QiitaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D607B6620E1308E00DDCD8C /* QiitaAPI.swift */; };
+		5D34091220E6386B00D2535F /* APIRequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D34091120E6386B00D2535F /* APIRequestProvider.swift */; };
+		5D34091420E648BA00D2535F /* QiitaAPIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D34091320E648BA00D2535F /* QiitaAPIRequestProtocol.swift */; };
+		5D34091620E6494A00D2535F /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D34091520E6494A00D2535F /* SearchRequest.swift */; };
+		5D34091820E649C300D2535F /* ItemDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D34091720E649C300D2535F /* ItemDetailRequest.swift */; };
 		5DC8FCCE20E3C3BB00458DC1 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC8FCCD20E3C3BB00458DC1 /* Article.swift */; };
 		5DC8FCD020E3C87100458DC1 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC8FCCF20E3C87100458DC1 /* Group.swift */; };
 		5DC8FCD220E3C88B00458DC1 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC8FCD120E3C88B00458DC1 /* Tag.swift */; };
@@ -59,6 +62,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5D34091120E6386B00D2535F /* APIRequestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestProvider.swift; sourceTree = "<group>"; };
+		5D34091320E648BA00D2535F /* QiitaAPIRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAPIRequestProtocol.swift; sourceTree = "<group>"; };
+		5D34091520E6494A00D2535F /* SearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequest.swift; sourceTree = "<group>"; };
+		5D34091720E649C300D2535F /* ItemDetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailRequest.swift; sourceTree = "<group>"; };
 		5D607B5620E12C3600DDCD8C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		5D607B5820E12C5600DDCD8C /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
 		5D607B5A20E12C8900DDCD8C /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
@@ -66,7 +73,6 @@
 		5D607B5E20E12CC400DDCD8C /* Build */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Build; path = Carthage/Build; sourceTree = "<group>"; };
 		5D607B6020E12CDA00DDCD8C /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		5D607B6220E12CE900DDCD8C /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
-		5D607B6620E1308E00DDCD8C /* QiitaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAPI.swift; sourceTree = "<group>"; };
 		5DC8FCCD20E3C3BB00458DC1 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		5DC8FCCF20E3C87100458DC1 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		5DC8FCD120E3C88B00458DC1 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
@@ -108,6 +114,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D34091020E6381300D2535F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5D34091120E6386B00D2535F /* APIRequestProvider.swift */,
+				5D34091320E648BA00D2535F /* QiitaAPIRequestProtocol.swift */,
+				5D34091520E6494A00D2535F /* SearchRequest.swift */,
+				5D34091720E649C300D2535F /* ItemDetailRequest.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		5D607B5520E12C3500DDCD8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,10 +173,10 @@
 		5DE1A83320E10E0A003C5E87 /* QiitaAPIManager */ = {
 			isa = PBXGroup;
 			children = (
+				5D34091020E6381300D2535F /* API */,
 				5DC8FCCA20E3C30E00458DC1 /* Entities */,
 				5DE1A83420E10E0A003C5E87 /* QiitaAPIManager.h */,
 				5DE1A83520E10E0A003C5E87 /* Info.plist */,
-				5D607B6620E1308E00DDCD8C /* QiitaAPI.swift */,
 			);
 			path = QiitaAPIManager;
 			sourceTree = "<group>";
@@ -300,8 +317,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DC8FCD220E3C88B00458DC1 /* Tag.swift in Sources */,
+				5D34091420E648BA00D2535F /* QiitaAPIRequestProtocol.swift in Sources */,
+				5D34091220E6386B00D2535F /* APIRequestProvider.swift in Sources */,
 				5DC8FCD020E3C87100458DC1 /* Group.swift in Sources */,
-				5D607B6720E1308E00DDCD8C /* QiitaAPI.swift in Sources */,
+				5D34091620E6494A00D2535F /* SearchRequest.swift in Sources */,
+				5D34091820E649C300D2535F /* ItemDetailRequest.swift in Sources */,
 				5DC8FCD420E3C8B300458DC1 /* User.swift in Sources */,
 				5DC8FCCE20E3C3BB00458DC1 /* Article.swift in Sources */,
 			);
