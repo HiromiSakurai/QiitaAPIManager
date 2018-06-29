@@ -14,6 +14,8 @@ import RxMoya
 
 class QiitaAPIManagerTests: XCTestCase {
 
+    let provider: APIRequestProvider = APIRequestProvider.shared
+
     let disposeBag = DisposeBag()
     override func setUp() {
         super.setUp()
@@ -25,12 +27,10 @@ class QiitaAPIManagerTests: XCTestCase {
         super.tearDown()
     }
 
-    func testFetchData() {
-        let aaa = Api()
-        let exp = expectation(description: "get API response")
-        aaa.apitest()
-            .subscribe(onSuccess: { res in
-                print(res)
+    func testSearchRequest() {
+        let exp = expectation(description: "get search req response")
+        provider.request(generateSearchRequest())
+            .subscribe(onSuccess: { response in
                 exp.fulfill()
             }, onError: { error in
                 exp.fulfill()
@@ -38,5 +38,26 @@ class QiitaAPIManagerTests: XCTestCase {
             })
             .disposed(by: disposeBag)
         waitForExpectations(timeout: 5.0, handler: nil)
+    }
+
+    func testItemDetailRequest() {
+        let exp = expectation(description: "get item detail req response")
+        provider.request(generateItemDetailRequest())
+            .subscribe(onSuccess: { response in
+                exp.fulfill()
+            }, onError: { error in
+                exp.fulfill()
+                XCTAssert(false, error.localizedDescription)
+            })
+            .disposed(by: disposeBag)
+        waitForExpectations(timeout: 5.0, handler: nil)
+    }
+
+    private func generateSearchRequest() -> SearchRequest {
+        return SearchRequest(searchQuery: "swift", page: 1)
+    }
+
+    private func generateItemDetailRequest() -> ItemDetailRequest {
+        return ItemDetailRequest(itemId: "3437fe7143b2ab31d2a5")
     }
 }

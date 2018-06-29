@@ -8,6 +8,7 @@
 
 import Foundation
 
+// swiftlint:disable:next type_name
 public struct Tag: Decodable {
     public let name: String?
     public let versions: [String]?
