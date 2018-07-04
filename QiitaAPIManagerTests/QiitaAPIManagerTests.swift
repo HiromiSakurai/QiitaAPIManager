@@ -16,6 +16,8 @@ class QiitaAPIManagerTests: XCTestCase {
 
     let provider: APIRequestProvider = APIRequestProvider.shared
 
+    let qiitaClient: QiitaClient = QiitaClient()
+
     let disposeBag = DisposeBag()
     override func setUp() {
         super.setUp()
@@ -44,6 +46,32 @@ class QiitaAPIManagerTests: XCTestCase {
         let exp = expectation(description: "get item detail req response")
         provider.request(generateItemDetailRequest())
             .subscribe(onSuccess: { response in
+                exp.fulfill()
+            }, onError: { error in
+                exp.fulfill()
+                XCTAssert(false, error.localizedDescription)
+            })
+            .disposed(by: disposeBag)
+        waitForExpectations(timeout: 5.0, handler: nil)
+    }
+
+    func testFetchArticles() {
+        let exp = expectation(description: "fetched articles")
+        qiitaClient.fetchArticles(searchQuery: "swift", page: 1)
+            .subscribe(onSuccess: { _ in
+                exp.fulfill()
+            }, onError: { error in
+                exp.fulfill()
+                XCTAssert(false, error.localizedDescription)
+            })
+            .disposed(by: disposeBag)
+        waitForExpectations(timeout: 5.0, handler: nil)
+    }
+
+    func testGetArticle() {
+        let exp = expectation(description: "got article")
+        qiitaClient.getArticle(with: "3437fe7143b2ab31d2a5")
+            .subscribe(onSuccess: { _ in
                 exp.fulfill()
             }, onError: { error in
                 exp.fulfill()
