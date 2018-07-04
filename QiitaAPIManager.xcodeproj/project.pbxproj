@@ -11,6 +11,7 @@
 		5D34091420E648BA00D2535F /* QiitaAPIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D34091320E648BA00D2535F /* QiitaAPIRequestProtocol.swift */; };
 		5D34091620E6494A00D2535F /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D34091520E6494A00D2535F /* SearchRequest.swift */; };
 		5D34091820E649C300D2535F /* ItemDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D34091720E649C300D2535F /* ItemDetailRequest.swift */; };
+		5D72917A20ED1DE100B95321 /* QiitaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D72917920ED1DE100B95321 /* QiitaClient.swift */; };
 		5DC8FCCE20E3C3BB00458DC1 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC8FCCD20E3C3BB00458DC1 /* Article.swift */; };
 		5DC8FCD020E3C87100458DC1 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC8FCCF20E3C87100458DC1 /* Group.swift */; };
 		5DC8FCD220E3C88B00458DC1 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC8FCD120E3C88B00458DC1 /* Tag.swift */; };
@@ -73,6 +74,7 @@
 		5D607B5E20E12CC400DDCD8C /* Build */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Build; path = Carthage/Build; sourceTree = "<group>"; };
 		5D607B6020E12CDA00DDCD8C /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		5D607B6220E12CE900DDCD8C /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		5D72917920ED1DE100B95321 /* QiitaClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaClient.swift; sourceTree = "<group>"; };
 		5DC8FCCD20E3C3BB00458DC1 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		5DC8FCCF20E3C87100458DC1 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		5DC8FCD120E3C88B00458DC1 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			children = (
 				5D34091020E6381300D2535F /* API */,
 				5DC8FCCA20E3C30E00458DC1 /* Entities */,
+				5D72917920ED1DE100B95321 /* QiitaClient.swift */,
 				5DE1A83420E10E0A003C5E87 /* QiitaAPIManager.h */,
 				5DE1A83520E10E0A003C5E87 /* Info.plist */,
 			);
@@ -319,6 +322,7 @@
 				5DC8FCD220E3C88B00458DC1 /* Tag.swift in Sources */,
 				5D34091420E648BA00D2535F /* QiitaAPIRequestProtocol.swift in Sources */,
 				5D34091220E6386B00D2535F /* APIRequestProvider.swift in Sources */,
+				5D72917A20ED1DE100B95321 /* QiitaClient.swift in Sources */,
 				5DC8FCD020E3C87100458DC1 /* Group.swift in Sources */,
 				5D34091620E6494A00D2535F /* SearchRequest.swift in Sources */,
 				5D34091820E649C300D2535F /* ItemDetailRequest.swift in Sources */,
