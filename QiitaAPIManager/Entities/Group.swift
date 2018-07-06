@@ -16,7 +16,7 @@ public struct Group: Decodable {
     public let updatedAt: String?
     public let urlName: String?
 
-    enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case createdAt = "created_at"
         case id
         case name

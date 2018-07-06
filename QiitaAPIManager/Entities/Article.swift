@@ -26,7 +26,7 @@ public struct Article: Decodable {
     public let user: User?
     public let pageViewCount: Int?
 
-    enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case renderedBody = "rendered_body"
         case body
         case coediting
