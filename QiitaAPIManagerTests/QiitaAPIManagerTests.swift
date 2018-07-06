@@ -14,18 +14,20 @@ import RxMoya
 
 class QiitaAPIManagerTests: XCTestCase {
 
-    let provider: APIRequestProvider = APIRequestProvider.shared
+    var provider: APIRequestProvider!
 
-    let qiitaClient: QiitaClient = QiitaClient()
+    var qiitaClient: QiitaClient!
 
     let disposeBag = DisposeBag()
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        provider = APIRequestProvider.shared
+        qiitaClient = QiitaClient()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        provider = nil
+        qiitaClient = nil
         super.tearDown()
     }
 
@@ -56,7 +58,7 @@ class QiitaAPIManagerTests: XCTestCase {
     }
 
     func testFetchArticles() {
-        let exp = expectation(description: "fetched articles")
+        let exp = expectation(description: "fetch articles")
         qiitaClient.fetchArticles(searchQuery: "swift", page: 1)
             .subscribe(onSuccess: { _ in
                 exp.fulfill()
@@ -69,7 +71,7 @@ class QiitaAPIManagerTests: XCTestCase {
     }
 
     func testGetArticle() {
-        let exp = expectation(description: "got article")
+        let exp = expectation(description: "get article")
         qiitaClient.getArticle(with: "3437fe7143b2ab31d2a5")
             .subscribe(onSuccess: { _ in
                 exp.fulfill()
