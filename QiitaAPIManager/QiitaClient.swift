@@ -31,6 +31,8 @@ public class QiitaClient: QiitaClientProtocol {
 
     private let provider: APIRequestProvider = APIRequestProvider.shared
 
+    public init() { }
+
     public func fetchArticles(searchQuery: String, page: Int) -> Single<[Article]> {
         return provider.request(SearchRequest(searchQuery: searchQuery, page: page))
     }
