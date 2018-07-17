@@ -25,7 +25,7 @@ public struct User: Decodable {
     public let twitterScreenName: String?
     public let websiteUrl: String?
 
-    enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case description
         case facebookId = "facebook_id"
         case followeesCount = "followees_count"
@@ -41,5 +41,37 @@ public struct User: Decodable {
         case profileImageUrl = "profile_image_url"
         case twitterScreenName = "twitter_screen_name"
         case websiteUrl = "website_url"
+    }
+
+    public init(description: String?,
+                facebookId: String?,
+                followeesCount: Int?,
+                followersCount: Int?,
+                githubLoginName: String?,
+                id: String?,
+                itemsCount: Int?,
+                linkedinId: String?,
+                location: String?,
+                name: String?,
+                organization: String?,
+                permanentId: Int?,
+                profileImageUrl: String?,
+                twitterScreenName: String?,
+                websiteUrl: String?) {
+        self.description = description
+        self.facebookId = facebookId
+        self.followeesCount = followeesCount
+        self.followersCount = followersCount
+        self.githubLoginName = githubLoginName
+        self.id = id
+        self.itemsCount = itemsCount
+        self.linkedinId = linkedinId
+        self.location = location
+        self.name = name
+        self.organization = organization
+        self.permanentId = permanentId
+        self.profileImageUrl = profileImageUrl
+        self.twitterScreenName = twitterScreenName
+        self.websiteUrl = websiteUrl
     }
 }

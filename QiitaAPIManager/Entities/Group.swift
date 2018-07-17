@@ -24,4 +24,18 @@ public struct Group: Decodable {
         case updatedAt = "updated_at"
         case urlName = "url_name"
     }
+
+    public init(createdAt: String?,
+                id: Int?,
+                name: String?,
+                `private`: Bool?,
+                updatedAt: String?,
+                urlName: String?) {
+        self.createdAt = createdAt
+        self.id = id
+        self.name = name
+        self.private = `private`
+        self.updatedAt = updatedAt
+        self.urlName = urlName
+    }
 }
