@@ -25,7 +25,7 @@ public struct User: Decodable {
     public let twitterScreenName: String?
     public let websiteUrl: String?
 
-    enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case description
         case facebookId = "facebook_id"
         case followeesCount = "followees_count"
