@@ -44,4 +44,38 @@ public struct Article: Decodable {
         case user
         case pageViewCount = "page_view_count"
     }
+
+    public init(renderedBody: String?,
+                body: String?,
+                coediting: Bool?,
+                commentsCount: Int?,
+                createdAt: String?,
+                group: Group?,
+                id: String?,
+                likesCount: Int?,
+                `private`: Bool?,
+                reactionsCount: Int?,
+                tags: [Tag]?,
+                title: String?,
+                updatedAt: String?,
+                url: String?,
+                user: User?,
+                pageViewCount: Int?) {
+        self.renderedBody = renderedBody
+        self.body = body
+        self.coediting = coediting
+        self.commentsCount = commentsCount
+        self.createdAt = createdAt
+        self.group = group
+        self.id = id
+        self.likesCount = likesCount
+        self.private = `private`
+        self.reactionsCount = reactionsCount
+        self.tags = tags
+        self.title = title
+        self.updatedAt = updatedAt
+        self.url = url
+        self.user = user
+        self.pageViewCount = pageViewCount
+    }
 }

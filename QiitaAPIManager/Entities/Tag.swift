@@ -12,4 +12,9 @@ import Foundation
 public struct Tag: Decodable {
     public let name: String?
     public let versions: [String]?
+
+    public init(name: String?, versions: [String]?) {
+        self.name = name
+        self.versions = versions
+    }
 }

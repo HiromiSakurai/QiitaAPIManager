@@ -42,4 +42,36 @@ public struct User: Decodable {
         case twitterScreenName = "twitter_screen_name"
         case websiteUrl = "website_url"
     }
+
+    public init(description: String?,
+                facebookId: String?,
+                followeesCount: Int?,
+                followersCount: Int?,
+                githubLoginName: String?,
+                id: String?,
+                itemsCount: Int?,
+                linkedinId: String?,
+                location: String?,
+                name: String?,
+                organization: String?,
+                permanentId: Int?,
+                profileImageUrl: String?,
+                twitterScreenName: String?,
+                websiteUrl: String?) {
+        self.description = description
+        self.facebookId = facebookId
+        self.followeesCount = followeesCount
+        self.followersCount = followersCount
+        self.githubLoginName = githubLoginName
+        self.id = id
+        self.itemsCount = itemsCount
+        self.linkedinId = linkedinId
+        self.location = location
+        self.name = name
+        self.organization = organization
+        self.permanentId = permanentId
+        self.profileImageUrl = profileImageUrl
+        self.twitterScreenName = twitterScreenName
+        self.websiteUrl = websiteUrl
+    }
 }
